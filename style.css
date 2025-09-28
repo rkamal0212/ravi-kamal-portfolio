@@ -207,4 +207,58 @@ body.dark-mode .testimonial-card {
 body.dark-mode .card {
     background: #2a3748;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+
+}
+/* Improved Mobile Responsiveness */
+@media screen and (max-width: 750px) {
+  .project-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 6px 0;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 15px 10px;
+  }
+
+  .resume-btn, .contact-btn, .send-btn {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+  }
+
+  #contact a.contact-btn {
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Avoid horizontal scrolling */
+.container, .card {
+  max-width: 100%;
+  box-sizing: border-box;
 }
